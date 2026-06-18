@@ -17,7 +17,7 @@ interface SeenBy {
 interface Message {
   id: string
   body: string
-  createdAt: string
+  createdAt: Date | string
   user: User
   seenBy?: SeenBy[]
 }
